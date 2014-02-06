@@ -11,10 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140128015740) do
+ActiveRecord::Schema.define(version: 20140206024643) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "genres", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "genres", ["name"], name: "index_genres_on_name", using: :btree
+
+  create_table "manga_genres", force: true do |t|
+    t.integer  "manga_id"
+    t.integer  "genre_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "manga_genres", ["manga_id", "genre_id"], name: "index_manga_genres_on_manga_id_and_genre_id", using: :btree
+
+  create_table "mangas", force: true do |t|
+    t.string   "title"
+    t.string   "image"
+    t.date     "start_publish_date"
+    t.date     "end_publish_date"
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "mangas", ["end_publish_date"], name: "index_mangas_on_end_publish_date", using: :btree
+  add_index "mangas", ["start_publish_date"], name: "index_mangas_on_start_publish_date", using: :btree
+  add_index "mangas", ["title"], name: "index_mangas_on_title", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "username"
