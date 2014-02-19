@@ -1,0 +1,11 @@
+<div class="jumbotron">
+<h1>Manga</h1>
+<h3>Click on any link below to read the Manga</h3>
+<ul>
+<% @manga.order(:title).each do |manga| %>	<h4>
+	<h4>
+	<%= link_to manga.name, manga %>
+	</h4>
+<% end %>
+</ul>
+</div>

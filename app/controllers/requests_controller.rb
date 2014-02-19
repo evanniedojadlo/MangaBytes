@@ -1,4 +1,4 @@
 class RequestsController < ApplicationController
-	def requests
+	def index
 end
 end

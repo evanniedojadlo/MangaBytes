@@ -1,0 +1,2 @@
+module MangaControllerHelper
+end
