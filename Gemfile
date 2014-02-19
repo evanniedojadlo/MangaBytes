@@ -13,6 +13,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # JSON API
 gem 'jbuilder', '~> 1.2'
