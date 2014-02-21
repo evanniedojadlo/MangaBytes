@@ -1,16 +1,15 @@
 MangaBytes::Application.routes.draw do
   devise_for :users
-
-
-
+  
 
   root "home#index"
 
   resources :mangas, only: [:index]
 
-  get "about" => "about#about"
+  resources :about, only: [:index]
 
-  get "requests" => "requests#requests"
+  resources :requests, only: [:index]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
