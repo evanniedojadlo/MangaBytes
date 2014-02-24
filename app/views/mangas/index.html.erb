@@ -1,12 +1,6 @@
 <div class="jumbotron">
 <h1>Manga</h1>
-<h3>Click on any link below to read the Manga</h3>
+<h3>Click on any of the thumbnails below to read the Manga</h3>
 <ul>
-<% @mangas.order(:title).each do |manga| %>	<h4>
-	<h4>
-  <%= manga.title %>
-  <%= image_tag(manga.image) %>
-	</h4>
-<% end %>
 </ul>
 </div>
