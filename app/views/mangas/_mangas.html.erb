@@ -1,6 +1,6 @@
 <% @mangas.order(:title).each do |manga| %>
-	<h4>
+	<h1>
   <%= manga.title %>
   <%= image_tag(manga.image) %>
-	</h4>
+	</h1>
 <% end %>
