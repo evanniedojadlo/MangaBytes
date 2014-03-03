@@ -1,5 +1,13 @@
-This is a test readme.
+Things you may want to cover:
 
 Installation
 ===========
 * Requires imagemagick (install via homebrew)
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database initialization
