@@ -21,9 +21,9 @@
 
         <%= form_tag('/search', class: "navbar-form navbar-left")  do %>
           <div class="form-group">
-            <%= text_field_tag('search') %>
+            <%= text_field_tag('search') if current_user %>
           </div>
-          <%= submit_tag("Submit", class: "btn btn-default") %>
+          <%= submit_tag("Submit", class: "btn btn-default") if current_user %>
         <% end %>
 
           <ul class="nav navbar-nav navbar-right">
