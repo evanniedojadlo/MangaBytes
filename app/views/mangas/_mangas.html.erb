@@ -1,8 +1,7 @@
-<% @mangas.order(:title).each do |manga| %>
-	<h1>
-<%# manga.title.order(:title).each do |manga| %>
-<%#= link_to manga.title, manga %>	
-  <%= manga.title %>
-  <%= image_tag(manga.image) %>
-	</h1>
+<ul>
+<%= @mangas.each do |manga| %>
+<%= manga.title %> | <%= image_tag(manga.image) %>
+
 <% end %>
+
+</ul>

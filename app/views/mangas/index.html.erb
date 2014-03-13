@@ -1,12 +1,8 @@
 <div class="jumbotron">
 <h1>Manga</h1>
 <h3>Click on any of the thumbnails below to read the Manga</h3>
-<ul>
-<%= @mangas.each do |manga| %>
-	<li> <%= manga.title %> | <%= image_tag(manga.image) %>
+
+<%= render 'mangas/mangas' %>
 
 
-<% end %>
-<li>
-</ul>
 </div>
