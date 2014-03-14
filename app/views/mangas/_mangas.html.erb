@@ -1,7 +1,10 @@
-<ul>
+<div class="row">
+
 <%= @mangas.each do |manga| %>
-<%= manga.title %> | <%= image_tag(manga.image) %>
+<div class="col-md-1">
+<%= manga.title %> <p> <p> <%= image_tag(manga.image) %>
 
 <% end %>
 
-</ul>
+</div>
+</div>
