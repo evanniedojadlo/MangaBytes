@@ -1,4 +1,4 @@
-<h1><%= @manga.name %></h1>
+<h1><%= @manga.title %></h1>
 <ul>
-  <%= image_tag(manga.image) %>
+  <%= image_tag(@manga.image, class: "img-rounded") %>
 </ul>
