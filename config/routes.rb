@@ -4,7 +4,7 @@ MangaBytes::Application.routes.draw do
 
   root to: "home#index"
 
-  resources :mangas, only: [:index, :show]
+  resources :mangas, only: [:index, :show] 
 
   resources :about, only: [:index]
 
