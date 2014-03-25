@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140206024643) do
+ActiveRecord::Schema.define(version: 20140325002601) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,22 @@ ActiveRecord::Schema.define(version: 20140206024643) do
   end
 
   add_index "manga_genres", ["manga_id", "genre_id"], name: "index_manga_genres_on_manga_id_and_genre_id", using: :btree
+
+  create_table "manga_volume_images", force: true do |t|
+    t.string   "image"
+    t.integer  "display_order"
+    t.integer  "manga_volume_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "manga_volumes", force: true do |t|
+    t.string   "authors"
+    t.datetime "publish_date"
+    t.integer  "manga_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "mangas", force: true do |t|
     t.string   "title"

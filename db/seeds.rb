@@ -17,3 +17,4 @@
 ## THIS IS A TEST
 Dir[Rails.root.join("lib/seeds/**/*.rb")].each {|f| require f}
 MangaSeeds.seed_mangas
+MangaVolumesSeeds.seed_volumes
