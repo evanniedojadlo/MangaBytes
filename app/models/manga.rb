@@ -6,4 +6,7 @@ class Manga < ActiveRecord::Base
 
   mount_uploader :image, MangaUploader
 
+  include Tire::Model::Search
+  include Tire::Model::Callbacks
+
 end
