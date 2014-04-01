@@ -1,4 +1,25 @@
 <div class="jumbotron">
 <h1>Requests</h1>
 <p>Request which Manga you would like to see.</p>
+
+<div class="span8" id="divMain">
+
+
+    <hr>
+
+    <form name="enq" method="post" action="email/" onsubmit="return validation();">
+    
+    <fieldset>    
+    <input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
+    <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email/>
+    <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments">
+
+    </text-area>
+    <div class="actions">
+    <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!">
+    </div>	
+    </fieldset>
+	
+    </form>  				 
+	</div>
 </div>

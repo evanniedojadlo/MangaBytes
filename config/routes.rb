@@ -4,11 +4,17 @@ MangaBytes::Application.routes.draw do
 
   root to: "home#index"
 
-  resources :mangas, only: [:index, :show] 
+
+
+  resources :mangas, only: [:index, :show] do 
+    resources :volumes, only: [:show]
+  end
 
   resources :about, only: [:index]
 
   resources :requests, only: [:index]
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

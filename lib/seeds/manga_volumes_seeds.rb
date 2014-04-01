@@ -4,7 +4,7 @@ class MangaVolumesSeeds
 		image_dir = "/Users/RAI/Desktop/hacksignLegendofTwilight"
 		manga = Manga.first
 
-		volume = Manga::Volume.create(authors: "Joss Wedon, Santa Clause", publish_date: Time.now, manga_id: manga.id)
+		volume = Manga::Volume.create(authors: "Joss Wedon, Santa Clause", volume_name: "test", volume_number: "103", publish_date: Time.now, manga_id: manga.id)
 
 		i = 0
 		Dir.foreach(image_dir) do |file|
