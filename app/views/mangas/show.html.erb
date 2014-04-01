@@ -1,17 +1,17 @@
 <div class="jumbotron">
     <h2><%= @manga.title %></h2>
-    <%= image_tag(@manga.image, class: "img-rounded") %>
-</div>
 
-<div id="volumes">
+    <div id="volumes">
 <ul>
   <% @manga.volumes.each do |volume| %>
     <li>
       <%= link_to(volume.volume_name, manga_volume_path(@manga.id, volume.id)) %>
     </li>
+    
+    <%= image_tag(@manga.image, class: "img-rounded") %>
+
 
   <% end %>
 
-</div>
-
-
+	</div>
+</div> 

@@ -1,3 +1,4 @@
+<div class="jumbotron">
 <% @volume.images.each do |image| %>
 	<%= link_to(image_tag(image.image.thumb.url), "#", data: {gallery: ''}) %>
 <% end %>
@@ -13,6 +14,7 @@
     <ol class="indicator"></ol>
 </div>
 </ul>
+    </div>
 </div>
 
 <script>
