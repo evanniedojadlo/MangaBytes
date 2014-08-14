@@ -15,7 +15,7 @@ gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'tire'
+#gem 'tire'
 
 # JSON API
 gem 'jbuilder', '~> 1.2'
