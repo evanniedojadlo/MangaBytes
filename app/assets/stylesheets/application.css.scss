@@ -21,7 +21,6 @@ $navbar-default-brand-color: #c0392b;
 $brand-primary: #c0392b;
 $jumbotron-bg: white;
 
-
 @import "bootstrap";
 
 .center {
@@ -34,4 +33,8 @@ $jumbotron-bg: white;
 
 .light-height-exp {
 	line-height: 4.4;
+}
+
+.btn-default {
+	background-color: #c0392b;
 }
