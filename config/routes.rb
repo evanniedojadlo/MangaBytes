@@ -1,10 +1,7 @@
 MangaBytes::Application.routes.draw do
   devise_for :users
   
-
   root to: "home#index"
-
-
 
   resources :mangas, only: [:index, :show] do 
     resources :volumes, only: [:show]
