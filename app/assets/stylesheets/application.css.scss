@@ -31,9 +31,6 @@ $jumbotron-bg: white;
      font-weight: bold;
 }
 
-.light-height-exp {
-	line-height: 4.4;
-}
 
 .btn-default {
 	background-color: #c0392b;
@@ -41,4 +38,9 @@ $jumbotron-bg: white;
 
 .container .jumbotron {
 	border-radius: 40px;
+	line-height: 1.142857;
+}
+
+.jumbotron h1 {
+	font-size: 60px;
 }
