@@ -1,6 +1,36 @@
 <div class="jumbotron">
-<% @volume.images.each do |image| %>
-	<%= link_to(image_tag(image.image.thumb.url), "#", data: {gallery: ''}) %>
-<% end %>
+<div id="links">
+
+
+
+
+<h1>Mangabytes Demo</h1>
+<p><a href="http://mangabytes.com/test/">Mangabytes</a> is a touch-enabled and responsive Manga gallery that I whipped up for a few of my friends that prefer to read their manga on the go. </p>
+
+<p>Mangabytes is built using the <a href="https://github.com/blueimp/Gallery">blueimp Gallery</a> which is based on <a href="http://swipejs.com/">Swipe</a>.</p>
+<br>
+<h2>Ranma 1/2 - Volume 1</h2>
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<!--     <a href="http://farm3.staticflickr.com/2839/9388978943_a0b396f2e5_o.jpg" data-gallery>
+        <img src="http://farm3.staticflickr.com/2839/9388978943_0ef767e046_t.jpg">
+    </a> -->
+
+
+	<% @volume.images.each do |image| %>
+		<%= link_to(image_tag(image.image.thumb.url), image.image.url, data: {gallery: ''}) %>
+	<% end %>
 
 </div>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+</div>
+</div>
+
+
