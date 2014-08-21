@@ -25,10 +25,6 @@ $jumbotron-bg: white;
 
 @import "bootstrap";
 
-.center {
-     text-align: center;
-}
-
 .navbar-brand {
      font-weight: bold;
 }
@@ -36,6 +32,7 @@ $jumbotron-bg: white;
 .container .jumbotron {
 	border-radius: 40px;
 	line-height: 1.142857;
+	text-align: center;
 }
 
 .jumbotron h1 {
@@ -44,4 +41,3 @@ $jumbotron-bg: white;
 .row {
 	line-height: 2.1;
 }
-
