@@ -1,6 +1,31 @@
 <div class="jumbotron">
-<% @volume.images.each do |image| %>
-	<%= link_to(image_tag(image.image.thumb.url), "#", data: {gallery: ''}) %>
-<% end %>
+
+
+
+
+<h3>.hack//sign Volume 1</h3>
+
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<!--     <a href="http://farm3.staticflickr.com/2839/9388978943_a0b396f2e5_o.jpg" data-gallery>
+        <img src="http://farm3.staticflickr.com/2839/9388978943_0ef767e046_t.jpg">
+    </a> -->
+<div id="links">
+
+	<% @volume.images.each do |image| %>
+		<%= link_to(image_tag(image.image.thumb.url), image.image.url, data: {gallery: ''}) %>
+	<% end %>
 
 </div>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+</div>
+</div>
+
+

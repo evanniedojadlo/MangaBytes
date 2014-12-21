@@ -14,4 +14,9 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-//= require_tree .
+//= require bootstrap-image-gallery
+//= require blueimp-helper
+//= require blueimp-gallery-fullscreen
+//= require blueimp-gallery-indicator
+//= require blueimp-gallery
+//= require home
