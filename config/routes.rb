@@ -4,6 +4,7 @@ MangaBytes::Application.routes.draw do
 
   root to: "home#index"
 
+  get '/updates' => 'home#updates'
 
 
   resources :mangas, only: [:index, :show] do 
