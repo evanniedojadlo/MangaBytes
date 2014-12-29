@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20140325002601) do
   create_table "manga_volumes", force: true do |t|
     t.string   "authors"
     t.datetime "publish_date"
+    t.string   "volume_name"
+    t.string   "volume_number"
     t.integer  "manga_id"
     t.datetime "created_at"
     t.datetime "updated_at"
