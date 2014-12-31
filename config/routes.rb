@@ -7,6 +7,8 @@ MangaBytes::Application.routes.draw do
 
   resources :mangas, only: [:index, :show] do 
     resources :volumes, only: [:show]
+      resources :updates, only: [:index, :show] #I need to update routes so that Home will show updates
+      #ONLY when a user is logged in
   end
 
   resources :about, only: [:index]
